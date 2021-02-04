@@ -1,0 +1,19 @@
+// MEDIA BREAKPOINTS
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1496px;
+
+.container-fluid {
+    max-width: $breakpoint-xl;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .router-view {
+        flex: 1;
+    }
+}

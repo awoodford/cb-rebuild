@@ -1,0 +1,13 @@
+$spacing-xxl: pxtorem(100px);
+$spacing-xl: pxtorem(70px);
+$spacing-lg: pxtorem(50px);
+$spacing-md: pxtorem(30px);
+$spacing-sm: pxtorem(20px);
+$spacing-xs: pxtorem(10px);
+
+.m-b-xxl { margin-bottom: $spacing-xxl; }
+.m-b-xl { margin-bottom: $spacing-xl; }
+.m-b-lg { margin-bottom: $spacing-lg; }
+.m-b-md { margin-bottom: $spacing-md; }
+.m-b-sm { margin-bottom: $spacing-sm; }
+.m-b-xs { margin-bottom: $spacing-xs; }

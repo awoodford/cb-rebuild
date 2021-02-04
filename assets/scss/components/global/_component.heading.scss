@@ -1,0 +1,44 @@
+.heading {
+
+    // Sizes
+    &__sm {
+        font-size: $font-size-sm;
+        line-height: $line-height-sm;
+    }
+
+    &__lg {
+        font-size: $font-size-lg;
+        line-height: $line-height-md;
+    }
+
+    // Transforms
+    &__uppercase {
+        text-transform: uppercase;
+    }
+
+    // Colours
+    &__grey {
+        color: $grey;
+    }
+
+    &__white {
+        color: $heading-white;
+    }
+
+    // Weights
+    &__semi-bold {
+        font-family: $font-semi;
+    }
+
+    // Underline
+    &__underline {
+        &::after {
+            content: '';
+            display: block;
+            width: pxtorem(80px);
+            height: pxtorem(7px);
+            background: $yellow;
+            margin-top: $spacing-sm;
+        }
+    }
+}

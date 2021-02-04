@@ -1,0 +1,58 @@
+// IMPORT FONTS
+
+$font-path: '/fonts/';
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(#{$font-path}montserrat/Montserrat-Regular.WOFF);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Medium';
+    src: url(#{$font-path}montserrat/Montserrat-Medium.WOFF);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Semi Bold';
+    src: url(#{$font-path}montserrat/Montserrat-SemiBold.WOFF);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Semi Bold Italic';
+    src: url(#{$font-path}montserrat/Montserrat-SemiBoldItalic.WOFF);
+    font-style: italic;
+}
+
+// FONTS
+$font-regular: 'Montserrat';
+$font-medium: 'Montserrat Medium';
+$font-semi: 'Montserrat Semi Bold';
+$font-semi-italic: 'Montserrat Semi Bold Italic';
+
+.font-regular { font-family: $font-regular; }
+.font-medium { font-family: $font-medium; }
+.font-semi { font-family: $font-semi; }
+.font-semi-italic { font-family: $font-semi-italic; }
+
+$font-size-xs: pxtorem(12px);
+$font-size-sm: pxtorem(18px);
+$font-size-md: pxtorem(20px);
+$font-size-lg: pxtorem(26px);
+
+// LINE HEIGHTS
+
+$line-height-sm: pxtorem(30px);
+$line-height-md: pxtorem(38px);
+
+// TEXT ALIGNMENT
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}

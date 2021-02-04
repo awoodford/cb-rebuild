@@ -1,0 +1,46 @@
+.animated {
+    &__link {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+
+        @include transition;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: -8px;
+            width: 0;
+            height: 2px;
+            z-index: -1;
+        }
+
+        &--yellow {
+            &::before {
+                background: $yellow;
+
+            }
+
+            &.active {
+                &::before {
+                    -moz-animation: animateWidth .4s cubic-bezier(0.51, 0.18, 0, 0.88);
+                    -webkit-animation: animateWidth .4s cubic-bezier(0.51, 0.18, 0, 0.88);
+                    animation: animateWidth .4s cubic-bezier(0.51, 0.18, 0, 0.88);
+                }
+            }
+        }
+    }
+}
+
+@keyframes animateWidth {
+    from {
+        right: 0;
+        width: 0;
+    }
+    to {
+        width: 100%;
+        left: 0;
+    }
+}
