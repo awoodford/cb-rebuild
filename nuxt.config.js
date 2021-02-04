@@ -6,7 +6,7 @@ const dynamicContentPath = 'assets/content'
 const dynamicRoutes = getDynamicPaths(
   {
     blog: 'blog/*.json',
-    projects: 'projects/*.json'
+    casestudies: 'case-studies/*.json'
   },
   dynamicContentPath
 )

@@ -1,52 +1,62 @@
 .footer {
-    padding: $spacing-lg;
-    background: $black;
+  padding: $spacing-lg;
+  background: $black;
 
-    &__logo {
-        max-width: 190px;
+  &__logo {
+    max-width: 190px;
+  }
+
+  &__nav {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__li {
+    display: block;
+    list-style: none;
+  }
+
+  &__a {
+    display: inline-block;
+    color: $white-alt;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: $font-size-sm;
+  }
+
+  &__contact-info {
+    &_email {
+      color: $white-alt;
     }
+  }
 
-    &__nav {
-        margin: 0;
-        padding: 0;
+  &__latest-blog {
+    display: inline-block;
+    margin: 30px 0;
+    max-width: 300px;
+    color: $white-alt;
+    text-decoration: none;
+    font-size: pxtorem(18px);
+    line-height: pxtorem(30px);
+  }
+
+  &__copyright {
+    display: flex;
+    align-items: center;
+    height: pxtorem(32px);
+    background: $yellow;
+    color: $dark-grey;
+    font-size: $font-size-xs;
+
+    &_a {
+      display: inline-block;
+      color: $dark-grey;
+      text-decoration: none;
     }
-
-    &__ul {
-        margin: 0;
-        padding: 0;
-    }
-
-    &__li {
-        display: block;
-        list-style: none;
-    }
-
-    &__a {
-        display: inline-block;
-        color: $white-alt;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: $font-size-sm;
-    }
-
-    &__contact-info {
-        &_email {
-            color: $white-alt;
-        }
-    }
-
-    &__copyright {
-        display: flex;
-        align-items: center;
-        height: pxtorem(32px);
-        background: $yellow;
-        color: $dark-grey;
-        font-size: $font-size-xs;
-
-        &_a {
-            display: inline-block;
-            color: $dark-grey;
-            text-decoration: none;
-        }
-    }
+  }
 }
